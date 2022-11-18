@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailsFragment">
+
+    <ImageView
+        android:id="@+id/img_foto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_artname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/edt_artname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="67dp"
+        android:ems="10"
+        android:hint="Enter Art Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edt_artistname"
+        app:layout_constraintEnd_toEndOf="@+id/img_foto"
+        app:layout_constraintTop_toBottomOf="@+id/img_foto" />
+
+    <EditText
+        android:id="@+id/edt_artistname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:hint="Enter Artist Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edt_year"
+        app:layout_constraintEnd_toEndOf="@+id/edt_artname"
+        app:layout_constraintStart_toStartOf="@+id/edt_artname"
+        app:layout_constraintTop_toBottomOf="@+id/edt_artname" />
+
+    <EditText
+        android:id="@+id/edt_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:ems="10"
+        android:hint="Enter Year"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_save"
+        app:layout_constraintEnd_toEndOf="@+id/edt_artistname"
+        app:layout_constraintStart_toStartOf="@+id/edt_artistname"
+        app:layout_constraintTop_toBottomOf="@+id/edt_artistname" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="Save"
+        app:layout_constraintBottom_toTopOf="@+id/btn_delete"
+        app:layout_constraintStart_toStartOf="@+id/btn_delete"
+        app:layout_constraintTop_toBottomOf="@+id/edt_year" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="DELETE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
+</androidx.constraintlayout.widget.ConstraintLayout>
