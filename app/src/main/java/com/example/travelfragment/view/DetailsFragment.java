@@ -64,7 +64,7 @@ public class DetailsFragment extends Fragment {
     Travel travel;
 
     public DetailsFragment() {
-        // Required empty public constructor
+
     }
 
 
